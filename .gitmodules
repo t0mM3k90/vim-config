@@ -13,3 +13,6 @@
 [submodule "bundle/vim-lsp"]
 	path = bundle/vim-lsp
 	url = https://github.com/prabirshrestha/vim-lsp.git
+[submodule "bundle/asyncomplete.vim"]
+	path = bundle/asyncomplete.vim
+	url = https://github.com/prabirshrestha/asyncomplete.vim.git
