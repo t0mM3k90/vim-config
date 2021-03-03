@@ -31,10 +31,10 @@ set shiftround                    "autoindent always uses multiples of shiftwidt
 set hidden                        "allows to 'close' unsaved buffers; they'll be hidden -> caution when exiting
 
 "################### VIMDIFFCOLOR OVERWRITE ##########################
-hi DiffAdd      gui=none    guifg=NONE          guibg=#bada9f     ctermbg=2*
-hi DiffChange   gui=none    guifg=NONE          guibg=#e5d5ac     ctermbg=3*
-hi DiffDelete   gui=bold    guifg=#ff8080       guibg=#ffb0b0     ctermbg=1*
-hi DiffText     gui=none    guifg=NONE          guibg=#8cbee2     ctermbg=4*
+hi DiffAdd      gui=none    guifg=NONE          guibg=#3E7B04     ctermbg=2*
+hi DiffChange   gui=none    guifg=NONE          guibg=#9D8000     ctermbg=3*
+hi DiffDelete   gui=bold    guifg=#ff8080       guibg=#A30000     ctermbg=1*
+hi DiffText     gui=none    guifg=NONE          guibg=#295183     ctermbg=4*
 
 
 "#################### LSP & ASYNCCOMPLETE ###########################
