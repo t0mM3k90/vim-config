@@ -36,7 +36,9 @@ hi DiffChange   gui=none    guifg=NONE          guibg=#9D8000     ctermbg=3*
 hi DiffDelete   gui=bold    guifg=#ff8080       guibg=#A30000     ctermbg=1*
 hi DiffText     gui=none    guifg=NONE          guibg=#295183     ctermbg=4*
 
-
+"#################### AUTOCOMPLETE-COLORS ###########################
+hi Pmenu        gui=none    guifg=gray          guibg=#ADADAD     ctermbg=7
+hi PmenuSel     gui=none    guifg=gray          guibg=#ADADAD     ctermbg=7
 "#################### LSP & ASYNCCOMPLETE ###########################
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
