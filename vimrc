@@ -39,9 +39,14 @@ hi DiffText     gui=none    guifg=NONE          guibg=#295183     ctermbg=4*
 "#################### AUTOCOMPLETE-COLORS ###########################
 hi Pmenu        gui=none    guifg=gray          guibg=#ADADAD     ctermbg=7
 hi PmenuSel     gui=none    guifg=gray          guibg=#ADADAD     ctermbg=7
+
 "#################### LSP & ASYNCCOMPLETE ###########################
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <cr>    pumvisible() ? "\<C-y>" : "\<cr>"
 
 imap <c-space> <Plug>(asyncomplete_force_refresh)
+
+"#################### FUGITIVE MERGE SHORTCUTS ###########################
+nnoremap gdh :diffget //2<CR>
+nnoremap gdl :diffget //3<CR>
