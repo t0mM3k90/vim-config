@@ -50,3 +50,6 @@ imap <c-space> <Plug>(asyncomplete_force_refresh)
 "#################### FUGITIVE MERGE SHORTCUTS ###########################
 nnoremap gdh :diffget //2<CR>
 nnoremap gdl :diffget //3<CR>
+
+"#################### MAPPINGS FOR VIMSPECTOR ###########################
+let g:vimspector_enable_mappings = 'HUMAN'
