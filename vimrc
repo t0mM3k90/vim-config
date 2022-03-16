@@ -16,6 +16,7 @@ set relativenumber                " linenumbers are relative
 set number                        " show current line number, instead of a 'relative 0'
 set cursorline                    " highlights current line you're in
 hi CursorLineNr  term=bold cterm=bold gui=bold
+set incsearch                     " preview during search (while typing)
 set ignorecase                    " by default search without casesensitivity
 set smartcase                     " use casesensitivity when searchstring has uppercase letters
 set hlsearch                      " highlight during search
@@ -29,6 +30,8 @@ set shiftwidth=2                  "use 2 spaces for autoindent
 set tabstop=2                     "use 2 spaces for tabstop
 set shiftround                    "autoindent always uses multiples of shiftwidth for indentation
 set hidden                        "allows to 'close' unsaved buffers; they'll be hidden -> caution when exiting
+set splitbelow                    "split a new `split` to the bottom (not the top)
+set splitright                    "split a new `vsplit` to the right (not the left)
 
 "################### VIMDIFFCOLOR OVERWRITE ##########################
 hi DiffAdd      gui=none    guifg=NONE          guibg=#3E7B04     ctermbg=2*
