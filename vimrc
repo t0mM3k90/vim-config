@@ -7,7 +7,10 @@ let g:airline_powerline_fonts = 1
 let g:airline_theme = 'wombat'
 set noshowmode                    "show mode not needed when airline is being used
 
-colorscheme wombat256grf
+"colorscheme PaperColor
+colorscheme molokai
+"colorscheme gruvbox
+"colorscheme wombat256grf
 syntax enable                     " enable syntax highlighting
 set nocompatible                  " use vim-mode over vi-compatibilty
 set smarttab                      " tab and backspace take indentation into account
@@ -39,10 +42,6 @@ hi DiffChange   gui=none    guifg=NONE          guibg=#9D8000     ctermbg=3*
 hi DiffDelete   gui=bold    guifg=#ff8080       guibg=#A30000     ctermbg=1*
 hi DiffText     gui=none    guifg=NONE          guibg=#295183     ctermbg=4*
 
-"#################### AUTOCOMPLETE-COLORS ###########################
-hi Pmenu        gui=none    guifg=gray          guibg=#ADADAD     ctermbg=7
-hi PmenuSel     gui=none    guifg=gray          guibg=#ADADAD     ctermbg=7
-
 "#################### LSP & ASYNCCOMPLETE ###########################
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
@@ -56,3 +55,8 @@ nnoremap gdl :diffget //3<CR>
 
 "#################### MAPPINGS FOR VIMSPECTOR ###########################
 let g:vimspector_enable_mappings = 'HUMAN'
+
+"######################## Presentation Mode ##############################
+nnoremap <F2> :set number! relativenumber! ruler! list!<CR>
+nnoremap <PageUp> :bn<CR>
+nnoremap <PageDown> :bp<CR>
