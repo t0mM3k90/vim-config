@@ -1,4 +1,5 @@
 execute pathogen#infect()
+execute pathogen#helptags()
 filetype plugin indent on
 "airline plugin
 set laststatus=2
@@ -35,6 +36,7 @@ set shiftround                    "autoindent always uses multiples of shiftwidt
 set hidden                        "allows to 'close' unsaved buffers; they'll be hidden -> caution when exiting
 set splitbelow                    "split a new `split` to the bottom (not the top)
 set splitright                    "split a new `vsplit` to the right (not the left)
+set mouse=a                       "enables selections via mouse + movement of windows
 
 "################### VIMDIFFCOLOR OVERWRITE ##########################
 hi DiffAdd      gui=none    guifg=NONE          guibg=#3E7B04     ctermbg=2*
@@ -60,3 +62,4 @@ let g:vimspector_enable_mappings = 'HUMAN'
 nnoremap <F2> :set number! relativenumber! ruler! list!<CR>
 nnoremap <PageUp> :bn<CR>
 nnoremap <PageDown> :bp<CR>
+
