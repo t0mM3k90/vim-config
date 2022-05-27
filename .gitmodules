@@ -25,3 +25,9 @@
 [submodule "bundle/vimspector"]
 	path = bundle/vimspector
 	url = https://github.com/puremourning/vimspector.git
+[submodule "bundle/nvim-compe"]
+	path = bundle/nvim-compe
+	url = https://github.com/hrsh7th/nvim-compe.git
+[submodule "bundle/nvim-lspconfig"]
+	path = bundle/nvim-lspconfig
+	url = https://github.com/neovim/nvim-lspconfig.git
