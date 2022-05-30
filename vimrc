@@ -39,8 +39,8 @@ nnoremap <PageUp> :bn<CR>
 nnoremap <PageDown> :bp<CR>
 
 "############################# PLUGIN-CONFIGS #############################
-source airline-config.vim
-source lsp-config.vim
-source vimspector-config.vim
-luafile compe-config.lua
+source ~/.vim/airline-config.vim
+source ~/.vim/lsp-config.vim
+source ~/.vim/vimspector-config.vim
+luafile ~/.vim/compe-config.lua
 
