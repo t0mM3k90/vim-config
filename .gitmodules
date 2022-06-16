@@ -31,3 +31,6 @@
 [submodule "bundle/nvim-lspconfig"]
 	path = bundle/nvim-lspconfig
 	url = https://github.com/neovim/nvim-lspconfig.git
+[submodule "bundle/vim-lsp-cxx-highlight"]
+	path = bundle/vim-lsp-cxx-highlight
+	url = https://github.com/jackguo380/vim-lsp-cxx-highlight.git
