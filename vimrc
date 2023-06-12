@@ -3,9 +3,10 @@ execute pathogen#helptags()
 filetype plugin indent on
 
 "colorscheme PaperColor
-colorscheme molokai
+"colorscheme molokai
 "colorscheme gruvbox
 "colorscheme wombat256grf
+colorscheme catppuccin-mocha
 syntax enable                     " enable syntax highlighting
 set nocompatible                  " use vim-mode over vi-compatibilty
 set smarttab                      " tab and backspace take indentation into account

@@ -34,3 +34,6 @@
 [submodule "bundle/vim-lsp-cxx-highlight"]
 	path = bundle/vim-lsp-cxx-highlight
 	url = https://github.com/jackguo380/vim-lsp-cxx-highlight.git
+[submodule "bundle/catppuccin"]
+	path = bundle/catppuccin
+	url = https://github.com/catppuccin/nvim.git
