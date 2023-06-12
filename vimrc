@@ -31,7 +31,9 @@ set hidden                        "allows to 'close' unsaved buffers; they'll be
 set splitbelow                    "split a new `split` to the bottom (not the top)
 set splitright                    "split a new `vsplit` to the right (not the left)
 set mouse=a                       "enables selections via mouse + movement of windows
-set spell                         "enables spell checking per default
+"set spell                         "enables spell checking per default
+
+command Bd bp|bd#
 
 "######################## Presentation Mode ##############################
 nnoremap <F2> :set number! relativenumber! ruler! list!<CR>
