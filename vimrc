@@ -41,9 +41,13 @@ nnoremap <F2> :set number! relativenumber! ruler! list!<CR>
 nnoremap <PageUp> :bn<CR>
 nnoremap <PageDown> :bp<CR>
 
+"######################## Terminal  ##############################
+nnoremap <C-T> :split\|resize 10\|terminal<CR>
+
 "############################# PLUGIN-CONFIGS #############################
 source ~/.vim/airline-config.vim
 source ~/.vim/lsp-config.vim
 source ~/.vim/vimspector-config.vim
+source ~/.vim/fzf.vim
 luafile ~/.vim/compe-config.lua
 
