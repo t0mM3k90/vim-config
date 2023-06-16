@@ -43,3 +43,15 @@
 [submodule "bundle/fzf.vim"]
 	path = bundle/fzf.vim
 	url = https://github.com/junegunn/fzf.vim.git
+[submodule "bundle/neo-tree.nvim"]
+	path = bundle/neo-tree.nvim
+	url = https://github.com/nvim-neo-tree/neo-tree.nvim.git
+[submodule "bundle/nui.nvim"]
+	path = bundle/nui.nvim
+	url = https://github.com/MunifTanjim/nui.nvim.git
+[submodule "bundle/nvim-web-devicons"]
+	path = bundle/nvim-web-devicons
+  url = https://github.com/nvim-tree/nvim-web-devicons.git
+[submodule "bundle/plenary.nvim"]
+	path = bundle/plenary.nvim
+  url = https://github.com/nvim-lua/plenary.nvim.git
