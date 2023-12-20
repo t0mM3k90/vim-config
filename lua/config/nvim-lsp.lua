@@ -1,7 +1,15 @@
 lspconfig = require'lspconfig'
 
 -- ############################## C/C++ LanguageServer ##############################
-lspconfig.ccls.setup{}
+lspconfig.ccls.setup{
+	root_dir = function(fname)
+		return vim.fn.getcwd()
+	end,
+	init_options = {
+		compilationDatabaseDirectory = "build";
+		index = { threads = 0; };
+	}
+}
 -- ############################## CMake LanguageServer ##############################
 lspconfig.cmake.setup{}
 -- ############################## Bash LanguageServer ##############################
