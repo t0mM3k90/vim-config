@@ -5,5 +5,10 @@ cmp.setup({
 		{ name = 'nvim_lsp' },
 		{ name = 'buffer' },
 		{ name = 'path' },
+	}),
+	mapping = cmp.mapping.preset.insert({
+		['<C-Space>'] = cmp.mapping.complete(),
+		['<C-e>'] = cmp.mapping.abort(),
+		['<CR>'] = cmp.mapping.confirm({select = true}),
 	})
 })
