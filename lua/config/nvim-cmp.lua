@@ -5,6 +5,7 @@ cmp.setup({
 		{ name = 'nvim_lsp' },
 		{ name = 'buffer' },
 		{ name = 'path' },
+		{ name = 'spell' },
 	}),
 	mapping = cmp.mapping.preset.insert({
 		['<C-Space>'] = cmp.mapping.complete(),

@@ -19,8 +19,8 @@ vim.opt.shiftround			=				true		-- autoindent always uses multiples of shiftwidt
 vim.opt.hidden					=				true		-- allows to 'close' unsaved buffers; they'll be hidden -> caution when exit
 vim.opt.splitbelow			=				true		-- split a new `split` to the bottom (not the top)
 vim.opt.splitright			=				true		-- split a new `vsplit` to the right (not the left)
-vim.opt.mouse						=				'a'				-- enables selections via mouse + movement of windows
-vim.opt.spell						=				false		-- enables spell checking per default
+vim.opt.mouse						=				'a'			-- enables selections via mouse + movement of windows
+vim.opt.spell						=				true		-- enables spell checking per default
 
 vim.opt.listchars	=	"eol:$,tab:>-,trail:~,extends:>,precedes:<"
 

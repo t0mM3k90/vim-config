@@ -29,15 +29,15 @@ return require('packer').startup(function(use)
 	-- install plugins here: "use ..."
 	use 'catppuccin/nvim'	
 
---	use 'vim-airline/vim-airline'
---	use {'vim-airline/vim-airline-themes', after = 'vim-airline' }
-  use 'nvim-lualine/lualine.nvim'
+	use 'vim-airline/vim-airline'
+	use {'vim-airline/vim-airline-themes', after = 'vim-airline' }
+--  use 'nvim-lualine/lualine.nvim'
 
 	use 'tpope/vim-fugitive'
 
 	use 'nvim-neo-tree/neo-tree.nvim'
 	use {'nvim-lua/plenary.nvim', after = 'neo-tree.nvim' }
-	use {'nvim-tree/nvim-web-devicons', after = {'neo-tree.nvim', 'lualine.nvim'} }
+	use {'nvim-tree/nvim-web-devicons', after = 'neo-tree.nvim' }
 	use {'MunifTanjim/nui.nvim', after = 'neo-tree.nvim' }
 
 	use 'junegunn/fzf'
@@ -49,6 +49,7 @@ return require('packer').startup(function(use)
 	use {'hrsh7th/cmp-nvim-lsp', after = 'nvim-cmp' }
 	use {'hrsh7th/cmp-buffer', after = 'nvim-cmp' }
 	use {'hrsh7th/cmp-path', after = 'nvim-cmp' }
+	use {'f3fora/cmp-spell', after = 'nvim-cmp' }
 
   use 'nvim-treesitter/nvim-treesitter'
   use {'nvim-treesitter/nvim-treesitter-refactor', after = 'nvim-treesitter' }
