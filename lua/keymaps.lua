@@ -25,14 +25,14 @@ vim.keymap.set('n', '<C-p>',				vim.diagnostic.goto_prev, opts)
 vim.keymap.set('n', '<C-n>',				vim.diagnostic.goto_next, opts)
 
 -- ############################## NeoTree ##############################
-vim.keymap.set('n', '<Tab>',				'<CMD>Neotree toggle reveal left<CR>', opts)
+vim.keymap.set('n', '<C-T>',				'<CMD>Neotree toggle reveal left<CR>', opts)
 
 -- ############################## FuzzyFind ##############################
 vim.keymap.set('n', '<C-H>', 				'<CMD>History:<CR>', opts)
 vim.keymap.set('n', '<C-F>', 				'<CMD>Files<CR>', opts)
 
 -- ############################## TERMINAL ##############################
-vim.keymap.set('n', '<C-T>',				'<CMD>split | resize 10 | terminal<CR>', opts)
+--vim.keymap.set('n', '<C-T>',				'<CMD>split | resize 10 | terminal<CR>', opts)
 
 -----------------
 -- VISUAL MODE --
