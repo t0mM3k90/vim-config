@@ -4,6 +4,7 @@ local opts = {
 }
 
 -- see `:h vim.keymap.set()`
+vim.g.mapleader = ";"
 -----------------
 -- NORMAL MODE --
 -----------------
@@ -24,12 +25,12 @@ vim.keymap.set('n', '<C-k>',				vim.lsp.buf.signature_help, opts)
 vim.keymap.set('n', '<C-p>',				vim.diagnostic.goto_prev, opts)
 vim.keymap.set('n', '<C-n>',				vim.diagnostic.goto_next, opts)
 
--- ############################## NeoTree ##############################
-vim.keymap.set('n', '<C-T>',				'<CMD>Neotree toggle reveal left<CR>', opts)
 
--- ############################## FuzzyFind ##############################
-vim.keymap.set('n', '<C-H>', 				'<CMD>History:<CR>', opts)
-vim.keymap.set('n', '<C-F>', 				'<CMD>Files<CR>', opts)
+-- ############################## LEADER ##############################
+vim.keymap.set('n', '<leader>t',				'<CMD>Neotree float toggle<CR>', opts)
+vim.keymap.set('n', '<leader>h',				'<CMD>History:<CR>', opts)
+vim.keymap.set('n', '<leader>f',				'<CMD>Files<CR>', opts)
+vim.keymap.set('n', '<leader>o',				'<CMD>Outline<CR>', opts)
 
 -- ############################## TERMINAL ##############################
 --vim.keymap.set('n', '<C-T>',				'<CMD>split | resize 10 | terminal<CR>', opts)
