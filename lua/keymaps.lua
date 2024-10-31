@@ -28,12 +28,10 @@ vim.keymap.set('n', '<C-n>',				vim.diagnostic.goto_next, opts)
 
 -- ############################## LEADER ##############################
 vim.keymap.set('n', '<leader>t',				'<CMD>Neotree float toggle<CR>', opts)
+vim.keymap.set('n', '<leader>T',				'<CMD>split | resize 10 | terminal<CR>', opts)
 vim.keymap.set('n', '<leader>h',				'<CMD>History:<CR>', opts)
 vim.keymap.set('n', '<leader>f',				'<CMD>Files<CR>', opts)
 vim.keymap.set('n', '<leader>o',				'<CMD>Outline<CR>', opts)
-
--- ############################## TERMINAL ##############################
---vim.keymap.set('n', '<C-T>',				'<CMD>split | resize 10 | terminal<CR>', opts)
 
 -----------------
 -- VISUAL MODE --
