@@ -27,7 +27,7 @@ vim.cmd([[
 return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
 	-- install plugins here: "use ..."
-	use 'catppuccin/nvim'	
+	use 'catppuccin/nvim'
 
 	use 'vim-airline/vim-airline'
 	use {'vim-airline/vim-airline-themes', after = 'vim-airline' }
@@ -49,11 +49,13 @@ return require('packer').startup(function(use)
 	use {'hrsh7th/cmp-nvim-lsp', after = 'nvim-cmp' }
 	use {'hrsh7th/cmp-buffer', after = 'nvim-cmp' }
 	use {'hrsh7th/cmp-path', after = 'nvim-cmp' }
-	use {'f3fora/cmp-spell', after = 'nvim-cmp' }
+	--use {'f3fora/cmp-spell', after = 'nvim-cmp' }
 
   use 'nvim-treesitter/nvim-treesitter'
   use {'nvim-treesitter/nvim-treesitter-refactor', after = 'nvim-treesitter' }
   use {'nvim-treesitter/nvim-treesitter-context', after = 'nvim-treesitter' }
+
+  use 'hedyhli/outline.nvim'
 
 	if packer_bootstrap then
 		require('packer').sync()
