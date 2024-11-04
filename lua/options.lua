@@ -21,6 +21,9 @@ vim.opt.splitbelow			=				true		-- split a new `split` to the bottom (not the to
 vim.opt.splitright			=				true		-- split a new `vsplit` to the right (not the left)
 vim.opt.mouse						=				'a'			-- enables selections via mouse + movement of windows
 vim.opt.spell						=				false		-- enables spell checking per default
+vim.opt.foldmethod			=				'expr'	-- uses 'expressions' for folding
+vim.opt.foldexpr				=				'nvim_treesitter#foldexpr()' -- uses treesitters folding-expression for folding
+vim.opt.foldtext				=				''			-- uses the firstline of code (without recoloring)
 
 vim.opt.listchars	=	"eol:$,tab:>-,trail:~,extends:>,precedes:<"
 
