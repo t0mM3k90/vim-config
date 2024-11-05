@@ -32,6 +32,11 @@ vim.keymap.set('n', '<leader>T',				'<CMD>split | resize 10 | terminal<CR>', opt
 vim.keymap.set('n', '<leader>h',				'<CMD>History:<CR>', opts)
 vim.keymap.set('n', '<leader>f',				'<CMD>Files<CR>', opts)
 vim.keymap.set('n', '<leader>o',				'<CMD>Outline<CR>', opts)
+vim.keymap.set('n', '<leader>cc',				'<CMD>split | resize 10 | terminal cmake -B build<CR>', opts)
+vim.keymap.set('n', '<leader>cb',				'<CMD>split | resize 10 | terminal cmake --build build -- -j${nproc}<CR>', opts)
+vim.keymap.set('n', '<leader>ct',				'<CMD>split | resize 10 | terminal ctest --test-dir build<CR>', opts)
+vim.keymap.set('n', '<leader>a"',				'bi"<ESC>ea"<ESC>', opts)
+vim.keymap.set('n', '<leader>A"',				'Bi"<ESC>Ea"<ESC>', opts)
 
 -----------------
 -- VISUAL MODE --
